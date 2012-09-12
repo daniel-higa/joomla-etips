@@ -1,0 +1,7 @@
+MTree:
+
+Para que el editor de MTree no filtre el HTML hay que ir a components->com_Mtree
+en el menu (more) ir a la opcion custom fields, elegir la opcion description,
+elegir no filtrar el html
+
+pagina de hoja (links): sub_listingDetails.tpl.php
