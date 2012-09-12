@@ -51,7 +51,7 @@ if ($this->config->getTemParam('skipFirstImage','0') == 1) {
 
 if(!is_null($this->fields->getFieldById(2))) { 
 	$link_desc = $this->fields->getFieldById(2);
-	echo $link_desc->getOutput(1);
+	echo $link_desc->getValue();
 }
 echo '</div>';
 
