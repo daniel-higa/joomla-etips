@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: metadata.xml 979 2011-01-05 06:57:47Z cy $ -->
+<metadata>
+	<menu>
+	        <options var="task">
+	                <default name="COM_MTREE_MENU_TASK_NAME_DEFAULT" msg="COM_MTREE_MENU_TASK_MSG_DEFAULT" />
+	        </options>
+	</menu>
+</metadata>
