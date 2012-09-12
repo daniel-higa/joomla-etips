@@ -1,1 +1,7 @@
-./configuration.php
+configuration.php
+components/com_mtree/img/listings/s/*.jpg
+components/com_mtree/img/listings/m/*.jpg
+components/com_mtree/img/listings/o/*.jpg
+components/com_mtree/img/listings/s/*.png
+components/com_mtree/img/listings/m/*.png
+components/com_mtree/img/listings/o/*.png
