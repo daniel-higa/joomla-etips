@@ -1097,3 +1097,23 @@ margin-left:3px;
 	margin-right:8px;
 	overflow:hidden;
 }
+
+
+.mtree_cat_link {
+    width:33%;
+    float:left;
+    margin-bottom:10px;
+}
+
+
+.app_title {
+    text-align: center;
+}
+
+.app_description {
+    width: 96%;
+    border-top: 1px #FFDDFF solid;
+    float: left;
+    margin-top: 2em;
+    padding-top: 2em;
+}

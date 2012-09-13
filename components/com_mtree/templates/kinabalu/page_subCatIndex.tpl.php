@@ -78,7 +78,7 @@ if( !empty($contents) )
 }
 ?> 
 <div id="cat-header">
-<h2 class="contentheading"><?php echo htmlspecialchars($this->cat_name) ?><?php echo ($this->mtconf['show_category_rss']) ? $this->plugin('showrssfeed','new') : ''; ?></h2>
+<h1 class="contentheading"><?php echo htmlspecialchars($this->cat_name) ?><?php echo ($this->mtconf['show_category_rss']) ? $this->plugin('showrssfeed','new') : ''; ?></h1>
 <p class="mbutton">
 <?php
 if (isset($this->cat_allow_submission) && $this->cat_allow_submission && $this->user_addlisting >= 0) {
@@ -91,7 +91,7 @@ if ( (isset($this->cat_image) && $this->cat_image <> '') || (isset($this->cat_de
 	echo '<div id="cat-desc">';
 	if (isset($this->cat_image) && $this->cat_image <> '') {
 		echo '<div id="cat-image">';
-		$this->plugin( 'image', $this->config->getjconf('live_site').$this->config->get('relative_path_to_cat_small_image') . $this->cat_image , $this->cat_name, '', '', '' );
+		//$this->plugin( 'image', $this->config->getjconf('live_site').$this->config->get('relative_path_to_cat_small_image') . $this->cat_image , $this->cat_name, '', '', '' );
 		echo '</div>';
 	}
 	if ( isset($this->cat_desc) && $this->cat_desc <> '') {	echo $this->cat_desc; }
@@ -148,7 +148,7 @@ if (in_array($this->cat_id, array_values($categorias))) {
             
         $db2 =& JFactory::getDBO();
         $query2 = 'SELECT cat.* FROM #__mt_cats AS cat ';
-        $query2 .= 'WHERE cat_published=1 && cat_approved=1 && cat_parent= ' . $db2->quote($items['cat_id']);
+        $query2 .= 'WHERE cat_published=1 && cat_approved=1 && cat_parent= ' . $db2->quote($items['cat_id']) . ' ORDER BY cat_name';
         $db2->setQuery($query2);
         $lista2 = $db2->loadAssocList();
 
@@ -157,13 +157,14 @@ if (in_array($this->cat_id, array_values($categorias))) {
             echo '<div class="listing-summary fieldRow"><div class="header"><h3>';
             //echo $items2['cat_name'];
             $cat_id = $items2['cat_id'];
-            $this->plugin('ahref', "index.php?option=$this->option&task=getcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($items2['cat_name']), '');
+            $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($items2['cat_name']), '');
             echo '</h3></div></div>';
         }
     }
 } else {
-    //include $this->loadTemplate( 'sub_showItems.tpl.php' );
-
+    if( $this->cat_show_listings ) {
+        include $this->loadTemplate( 'sub_listings.tpl.php');
+    }
 }
 
 if( empty($this->categories) && $this->pageNav->total == 0 ) {

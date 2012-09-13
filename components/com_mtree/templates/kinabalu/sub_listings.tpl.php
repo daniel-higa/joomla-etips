@@ -4,23 +4,27 @@ if( $this->task == "search" && empty($this->links) ) {
 
 	if( empty($this->categories) ) {
 	?>
-	<p /><center><?php echo JText::_( 'Your search does not return any result' ) ?></center><p />
+	  <!--<p /><center><?php echo JText::_( 'Your search does not return any result' ) ?></center><p />-->
 	<?php
 	}
 	
 } else {
 	if($this->pageNav->total > 0) {
 		?>
-		<div class="pages-links">
+		<!--<div class="pages-links">
 			<span class="xlistings"><?php echo $this->pageNav->getResultsCounter(); ?></span>
 			<?php echo $this->pageNav->getPagesLinks(); ?>
-		</div>
+		</div>-->
 
 		<?php
 		$i = 0;
 		foreach ($this->links AS $link) {
 			$i++;
 			$fields = $this->fields[$link->link_id];
+            $aux_link = loadLink($link->link_id, $savantConf, $temp_fields, $aux_params);
+            $link_desc_field = $temp_fields->getFieldById(2);
+            $link_desc = $link_desc_field->getValue();
+
 			include $this->loadTemplate('sub_listingSummary.tpl.php');
 		}
 

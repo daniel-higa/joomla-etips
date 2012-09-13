@@ -1,3 +1,11 @@
+<div class="app_description">
+    <?php
+        $link_name = $fields->getFieldById(1);
+        echo '<h2 class="app_title">' . $link_name->getOutput(2) . '</h2>';
+        echo $link_desc;
+    ?>
+</div>
+
 <?php
 
 											
@@ -21,6 +29,7 @@ echo ($link->link_featured && $this->config->getTemParam('useFeaturedHighlight',
 		<div class="header">
 		<h3><?php 
 			$link_name = $fields->getFieldById(1);
+
 			switch( $this->config->getTemParam('listingNameLink','1') )
 			{
 				default:
@@ -163,7 +172,6 @@ echo ($link->link_featured && $this->config->getTemParam('useFeaturedHighlight',
 									
 					//preg_match('/<a href="([^"]+)">/',$field->getOutput(2),$salida); 
 					$link = $field->getOutput(2);
-					
 					
 										 
 					if($field_count == '1')

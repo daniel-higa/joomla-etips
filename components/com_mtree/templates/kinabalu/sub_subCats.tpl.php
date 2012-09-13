@@ -1,6 +1,6 @@
 <?php if (isset($this->categories) && is_array($this->categories) && !empty($this->categories)) { ?>
 <div id="subcats">
-<div class="title"><?php echo JText::_( 'Categories' ); ?></div>
+<div class="title"><?php //echo JText::_( 'Categories' ); ?></div>
 <?php 
 	$i = 0;
 	
@@ -8,29 +8,31 @@
 	# Sub Categories
 	#
 
-	echo '<ul>';
+//	echo '<ul>';
 	foreach ($this->categories as $cat) {
 		if($this->task == 'listalpha' && $this->config->getTemParam('onlyShowRootLevelCatInListalpha',0) && $cat->cat_parent > 0) {
 			continue;
 		}
-		echo '<li>';
+		//echo '<li>';
 		if($cat->cat_featured) echo '<strong>';
-		$this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat->cat_id&Itemid=$this->Itemid", htmlspecialchars($cat->cat_name), '' );
+        echo '<div class="titulo_region mtree_cat_link">';
+		$this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat->cat_id&Itemid=$this->Itemid", htmlspecialchars($cat->cat_name), '');
+        echo '</div>';
 		
 		if( $this->config->getTemParam('displaySubcatsCatCount','0') ) {
 			$count[] = $cat->cat_cats;
 		}
-		if( $this->config->getTemParam('displaySubcatsListingCount','1') ) {
+		if( $this->config->getTemParam('displaySubcatsListingCount','0') ) {
 			$count[] = $cat->cat_links;
 		}
 		if( !empty($count) ) {
-			echo ' <small>('.implode('/',$count).')</small>';
+			//echo ' <small>('.implode('/',$count).')</small>';
 			unset($count);
 		}
 		if($cat->cat_featured) echo '</strong>';
-		echo '</li>';
+		//echo '</li>';
 	}
-	echo '</ul>';
+	//echo '</ul>';
 ?></div><?php 
 }
 
