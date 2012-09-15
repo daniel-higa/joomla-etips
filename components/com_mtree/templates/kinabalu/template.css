@@ -1098,6 +1098,9 @@ margin-left:3px;
 	overflow:hidden;
 }
 
+.clear {
+    clear:both;
+}
 
 .mtree_cat_link {
     width:33%;
@@ -1105,19 +1108,73 @@ margin-left:3px;
     margin-bottom:10px;
 }
 
+.app_head_container {
+    vertical-align: center;
+}
 
-.app_title {
-    text-align: center;
+.title_container {
+    margin-right: 2em;
 }
 
 .app_description {
-    width: 96%;
-    border-top: 1px #FFDDFF solid;
-    float: left;
     margin-top: 2em;
     padding-top: 2em;
+    width: 85%;
+}
+
+.app_description :hover{
+    background: #F0F0F0;
+}
+
+.app_description h3 p {
+    color: #777777;
+    font-size: 12px;
 }
 
 .head_sub_cat {
     text-align: center;
+}
+
+.description_container {
+   cursor:pointer;
+}
+
+.even {
+    border-top: 1px #FFDDFF solid;
+    width: 96%;
+}
+
+.odd {
+    border-top: 1px #FFDDFF solid;
+    width: 96%;
+    margin-right: 4%;
+}
+
+.odd .app_description {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.even .title_container {
+    float: left;
+}
+
+.even .ico_container {
+    float: right;
+}
+
+.even .description_container {
+   text-align: left;
+}
+
+.odd .title_container {
+    float: right;
+}
+
+.odd .ico_container {
+    float: left;
+}
+
+.odd .description_container {
+   text-align: right;
 }

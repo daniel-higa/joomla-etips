@@ -20,12 +20,14 @@ if( $this->task == "search" && empty($this->links) ) {
 		$i = 0;
 		foreach ($this->links AS $link) {
 			$i++;
+            $sub_class = ($i % 2)?'even':'odd';
 			$fields = $this->fields[$link->link_id];
             $aux_link = loadLink($link->link_id, $savantConf, $temp_fields, $aux_params);
             $link_desc_field = $temp_fields->getFieldById(2);
             $link_desc = $link_desc_field->getValue();
-
+            echo "<div class='$sub_class'>";
 			include $this->loadTemplate('sub_listingSummary.tpl.php');
+            echo '</div>';
 		}
 
 		if( $this->pageNav->total > $this->pageNav->limit ) { ?>
