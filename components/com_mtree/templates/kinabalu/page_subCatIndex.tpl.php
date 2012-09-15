@@ -76,9 +76,16 @@ if( !empty($contents) )
 {
 	echo '<div class="category-header-modules">' . $contents . '</div>';
 }
+
+$sub_class = '';
+if (!in_array($this->cat_id, array_values($categorias))) {
+   $sub_class = 'head_sub_cat';
+}
+
 ?> 
+
 <div id="cat-header">
-<h1 class="contentheading"><?php echo htmlspecialchars($this->cat_name) ?><?php echo ($this->mtconf['show_category_rss']) ? $this->plugin('showrssfeed','new') : ''; ?></h1>
+<h1 class="contentheading <?php echo $sub_class;?>"><?php echo htmlspecialchars($this->cat_name) ?><?php echo ($this->mtconf['show_category_rss']) ? $this->plugin('showrssfeed','new') : ''; ?></h1>
 <p class="mbutton">
 <?php
 if (isset($this->cat_allow_submission) && $this->cat_allow_submission && $this->user_addlisting >= 0) {
