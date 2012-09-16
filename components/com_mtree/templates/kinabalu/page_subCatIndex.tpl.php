@@ -78,7 +78,7 @@ if( !empty($contents) )
 }
 
 $sub_class = '';
-if (!in_array($this->cat_id, array_values($categorias))) {
+if (is_array($categorias) and !in_array($this->cat_id, array_values($categorias))) {
    $sub_class = 'head_sub_cat';
 }
 
