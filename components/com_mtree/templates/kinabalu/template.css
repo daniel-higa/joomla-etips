@@ -108,7 +108,8 @@ margin:5px 0 10px;
 }
 
 #cat-desc p {
-text-align:left;
+text-align: center;
+width: 96%;
 margin:0;
 }
 
