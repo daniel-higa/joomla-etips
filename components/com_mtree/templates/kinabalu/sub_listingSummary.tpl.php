@@ -20,8 +20,8 @@
         echo '<div class="description_container"  onclick="document.location = \'' . $link . '\';">';
         echo '<div class="description_text"><h3>' . $link_desc . '</h3></div>';
 
-        echo '<div class="description_graph"><h3>' . $this->plugin( 'ahreflistingimage', $link, '');
-        if (isset($aux_link->link_image)) {
+        echo '<div class="description_graph">';
+        if (isset($aux_link->link_image) and !empty($aux_link->link_image)) {
 				echo '<img src="' . $this->jconf['live_site'] . $this->mtconf['relative_path_to_listing_small_image'] . $aux_link->link_image .'" alt=""/>';
         }
 
@@ -30,7 +30,7 @@
         if (isset($column_description)) {
             echo $column_description->getValue();
         }
-        echo '</h3></div>';
+        echo '</div>';
 
         echo '<div class="clear"></div>';
         echo '</div>';
