@@ -1113,13 +1113,13 @@ margin-left:3px;
 }
 
 .title_container {
-    margin-right: 2em;
+
 }
 
 .app_description {
     margin-top: 2em;
     padding-top: 2em;
-    width: 85%;
+    width: 95%;
 }
 
 .app_description :hover{
@@ -1137,6 +1137,15 @@ margin-left:3px;
 
 .description_container {
    cursor:pointer;
+}
+
+.description_text {
+    width: 68%;
+}
+
+.description_graph {
+    width: 30%;
+    overflow: hidden;
 }
 
 .even {
@@ -1157,24 +1166,34 @@ margin-left:3px;
 
 .even .title_container {
     float: left;
+    margin-right: 2em;
 }
 
 .even .ico_container {
-    float: right;
+    float: left;
 }
 
 .even .description_container {
    text-align: left;
 }
 
+.even .description_text {
+    float: left;
+}
+
 .odd .title_container {
     float: right;
+    margin-left: 2em;
 }
 
 .odd .ico_container {
-    float: left;
+    float: right;
 }
 
 .odd .description_container {
    text-align: right;
+}
+
+.odd .description_text {
+    float: right;
 }
