@@ -8,7 +8,20 @@ $renderer	= $document->loadRenderer('module');
 
 $contents	= '';
 
-
+/* custom for etips only */
+$categorias = array(
+	'English (United Kingdom)' => '85',
+	'Español (España)' => '86',
+	'French (FR)' => '192',
+	'中文（简体）' => '194',
+	'Russian' => '299',
+	'German (DE-CH-AT)' => '355',
+	'Italian (IT)' => '408',
+	'Português (pt-PT)' => '461',
+	'Korean(Republic of Korea)' => '568',
+	'日本語 (Japan)' => '621'
+);
+/* end custom */
 
 
 $zone = "tree";
@@ -78,7 +91,7 @@ if( !empty($contents) )
 }
 
 $sub_class = '';
-if (is_array($categorias) and !in_array($this->cat_id, array_values($categorias))) {
+if (!is_array($categorias) or !in_array($this->cat_id, array_values($categorias))) {
    $sub_class = 'head_sub_cat';
 }
 
@@ -118,19 +131,6 @@ $lang =& JFactory::getLanguage();
 
 echo '<div style="clear:both;"></div>';
 //Categorías según el idioma. Para agregar una, agregar una línea 'idioma' => 'numId',
-$categorias = array(
-	'English (United Kingdom)' => '85',
-	'Español (España)' => '86',
-	'French (FR)' => '192',
-	'中文（简体）' => '194',
-	'Russian' => '299',
-	'German (DE-CH-AT)' => '355',
-	'Italian (IT)' => '408',
-	'Português (pt-PT)' => '461',
-	'Korean(Republic of Korea)' => '568',
-	'日本語 (Japan)' => '621'
-);
-
 
 $categoria = $categorias[$lang->getName()];
 
