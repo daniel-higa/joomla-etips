@@ -1117,6 +1117,10 @@ margin-left:3px;
 
 }
 
+.title_container .app_title {
+    color: black;
+}
+
 .app_description {
     margin-top: 2em;
     padding-top: 2em;
@@ -1124,7 +1128,6 @@ margin-left:3px;
 }
 
 .app_description :hover{
-    background: #F0F0F0;
 }
 
 .app_description h3 p {
@@ -1137,7 +1140,6 @@ margin-left:3px;
 }
 
 .description_container {
-   cursor:pointer;
 }
 
 .description_text {

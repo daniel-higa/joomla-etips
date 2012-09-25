@@ -10,15 +10,15 @@
             $link = $field_link->getValue();
         }
         
-        $app_link = '<a href="'. $link .'"><img src="images/appstore_btn_en.png" alt="' . $link_name->getOutput(2) . '"></a>';
+        $app_link = '<img src="images/appstore_btn_en.png" alt="' . $link_name->getOutput(2) . '">';
         
-        echo '<a href="' . $link . '" >';
+        echo '<a href="' . $link . '" target="_blank">';
         echo '<div class="app_head_container">';
         echo '<div class="title_container"><h2 class="app_title">' . $link_name->getOutput(2) . '</h2></div><div class="ico_container">' . $app_link  . '</div></div>';
         echo '<div class="clear"></div>';
         echo '</a>';
-        echo '<div class="description_container"  onclick="document.location = \'' . $link . '\';">';
-        echo '<div class="description_text"><h3>' . $link_desc . '</h3></div>';
+        echo '<div class="description_container" >';
+        echo '<div class="description_text">' . $link_desc . '</div>';
 
         echo '<div class="description_graph">';
         if (isset($aux_link->link_image) and !empty($aux_link->link_image)) {
