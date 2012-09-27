@@ -18,7 +18,7 @@
         echo '<div class="clear"></div>';
         echo '</a>';
         echo '<div class="description_container" >';
-        echo '<div class="description_text">' . $link_desc . '</div>';
+        echo '<div class="description_text"><h3>' . $link_desc . '</h3></div>';
 
         echo '<div class="description_graph">';
         if (isset($aux_link->link_image) and !empty($aux_link->link_image)) {
