@@ -75,6 +75,8 @@ CREATE TABLE IF NOT EXISTS `#__mt_cats` (
   `cat_usemainindex` tinyint(4) NOT NULL default '0',
   `cat_allow_submission` tinyint(4) NOT NULL default '1',
   `cat_show_listings` tinyint(3) unsigned NOT NULL default '1',
+  `cat_short_description` varchar(255) NOT NULL,
+  `cat_link` varchar(255) NOT NULL,
   `metakey` text NOT NULL,
   `metadesc` text NOT NULL,
   `ordering` int(11) NOT NULL default '0',

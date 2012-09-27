@@ -1315,6 +1315,20 @@ class HTML_mtree {
 				echo $editor->display( 'cat_desc',  $row->cat_desc , '100%', '550', '75', '20' ) ;
 				?></td>
 			</tr>
+            
+            <tr>
+                <td valign="top" align="right" class="key"><?php echo JText::_( 'Short Description' ) ?>:</td>
+                <td>
+                    <input class="text_area" type="text" name="cat_short_description" size="50" maxlength="250" value="<?php echo $row->cat_short_description;?>" />
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top" align="right" class="key"><?php echo JText::_( 'Link' ) ?>:</td>
+                <td>
+                    <input class="text_area" type="text" name="cat_link" size="50" maxlength="250" value="<?php echo $row->cat_link;?>" />
+                </td>
+            </tr>
 
 			<tr>
 				<td valign="top" align="right" class="key"><?php echo JText::_( 'Image' ) ?>:</td>
