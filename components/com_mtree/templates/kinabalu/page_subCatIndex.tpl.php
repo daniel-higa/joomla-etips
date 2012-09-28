@@ -168,7 +168,9 @@ if (in_array($this->cat_id, array_values($categorias))) {
             $app_link = (isset($items2['cat_link']) and !empty($items2['cat_link']))?$items2['cat_link']:'';
             $app_ico = (isset($items2['cat_link']) and !empty($items2['cat_link']))?'<img class="applogo" src="images/apple-logo.png" alt="shop"/>':'';
             $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($items2['cat_name']), '');
-            echo '</h3></div><div class="fields"><a href="'. $app_link .' " target="_blank">'. $short_description . $app_ico  .'</a></div></div>';
+            echo '</h3></div><div class="fields">';
+            $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($short_description), '');
+            echo '<a href="'. $app_link .' " target="_blank">'. $app_ico  .'</a></div></div>';
         }
     }
 } else {
