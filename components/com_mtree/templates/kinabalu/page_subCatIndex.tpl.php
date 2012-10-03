@@ -161,7 +161,7 @@ if (in_array($this->cat_id, array_values($categorias))) {
 
         //var_dump($lista2);
         foreach ($lista2 as $items2) {
-            echo '<div class="listing-summary fieldRow"><div class="header"><h3>';
+            echo '<div class="listing-summary fieldRow"><div class="header-mtree"><h3>';
             //echo $items2['cat_name'];
             $cat_id = $items2['cat_id'];
             $short_description = isset($items2['cat_short_description'])?$items2['cat_short_description']:'';

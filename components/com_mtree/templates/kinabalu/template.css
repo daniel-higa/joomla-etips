@@ -288,6 +288,15 @@ clear:left;;
 	/*margin-bottom:10px;*/
 }
 
+.listing-summary .header-mtree {
+	float: left;
+    height: 22px;
+    padding: 8px 8px 0px 8px;
+    margin-top: -7px;
+    width:auto;
+    max-width: 280px;
+}
+
 #listings .listing-summary h3 {
 font-size:1.6em;
 float:left;
