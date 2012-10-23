@@ -277,8 +277,17 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 </script>
 
 
-
   <!-- google analytics END -->
+  <!-- Put the following javascript before the closing </head> tag. -->
+    <script>
+      (function() {
+        var cx = '013745033011810475159:_lczuqpjctw';
+        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com.ar/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 
 </head>
 
@@ -332,7 +341,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
         </style>
 
-        <div id="lang" onMouseOver="change_lang_()" onMouseOut="change_lang_out_()">
+        <div id="lang"  onMouseOver="change_lang_()" onMouseOut="change_lang_out_()">
 
         
 
@@ -346,39 +355,19 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
         
 
-        <div id="search">
-
-        
-
-          <jdoc:include type="modules" name="search" />
-          
-
-<div id="cse-search-form" style="width: 100%;">Loading</div>
-<script src="//www.google.es/jsapi" type="text/javascript"></script>
-<script type="text/javascript"> 
-  google.load('search', '1', {language : 'es'});
-  google.setOnLoadCallback(function() {
-    var customSearchControl = new google.search.CustomSearchControl(
-      '002530659928648410632:ctd8koypgcy');
-
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    var options = new google.search.DrawOptions();
-    options.enableSearchboxOnly("http://etipsmobile.com/en/buscar.html");
-    customSearchControl.draw('cse-search-form', options);
-  }, true);
-</script>
-<link rel="stylesheet" href="//www.google.com/cse/style/look/default.css" type="text/css" /> <style type="text/css">
-  input.gsc-input {
-    border-color: #E5E5E5 #DBDBDB #D2D2D2;
-	background:url("../images/lang.jpg") repeat scroll 0 0 white;
-  }
-  input.gsc-search-button {
-    border-color: #E5E5E5 #DBDBDB #D2D2D2;
-    background-color: #CECECE;
-  }
-</style>
-        
-
+        <div id="search" style="margin-top:37px;">
+            <jdoc:include type="modules" name="search" />
+            <link rel="stylesheet" href="//www.google.com/cse/style/look/default.css" type="text/css" /> <style type="text/css">
+              input.gsc-input {
+                border-color: #E5E5E5 #DBDBDB #D2D2D2;
+                background:url("../images/lang.jpg") repeat scroll 0 0 white;
+              }
+              input.gsc-search-button {
+                border-color: #E5E5E5 #DBDBDB #D2D2D2;
+                background-color: #CECECE;
+              }
+            </style>
+            <gcse:searchbox-only></gcse:searchbox-only>
         </div>
 
 
