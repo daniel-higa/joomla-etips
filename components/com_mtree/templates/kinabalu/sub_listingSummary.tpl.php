@@ -10,7 +10,10 @@
             $link = $field_link->getValue();
         }
         
-        $app_link = '<img src="images/appstore_btn_en.png" alt="' . $link_name->getOutput(2) . '">';
+        $app_link = '';
+        if (isset($link) and !empty($link)) {
+            $app_link = '<img src="images/appstore_btn_en.png" alt="' . $link_name->getOutput(2) . '">';
+        }
         
         echo '<a href="' . $link . '" target="_blank">';
         echo '<div class="app_head_container">';
