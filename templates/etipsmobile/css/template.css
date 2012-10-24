@@ -1302,3 +1302,22 @@ div.selectbox-wrapper ul li {
     height: 30px;
     width: 200px;
 	}
+
+#bottom_menu .module_menu .menu, .module .menu {
+    width: 949px;
+}
+
+#bottom_menu .parent {
+    float: left;
+    font-size: 18px;
+    width: 16.6%;
+}
+
+#bottom_menu span {
+    background: none;
+}
+
+#bottom_manu .module_menu .menu li, .module .menu li {
+    padding: 0;
+    font-size: 12px;
+}

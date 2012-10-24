@@ -652,22 +652,15 @@ $icq = htmlspecialchars($tplparams->get('icq'));
                  
                  
 
-                  <jdoc:include type="modules" name="social" style="rounded"/>
+                 <jdoc:include type="modules" name="social" style="rounded"/>
 
                   
 
                   
 
                     <a href="http://www.youtube.com/watch?v=y6A1VQDOxSE&feature=player_embedded" title="Youtube" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/youtube.jpg" style="float:left"/></a>
-
-                
-
                 </div>
-
-                
-
-
-
+                <jdoc:include type="modules" name="bottom-menu" style="rounded"/>
       </div>
 
 
