@@ -281,7 +281,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
   <!-- Put the following javascript before the closing </head> tag. -->
     <script>
       (function() {
-        var cx = '013745033011810475159:_lczuqpjctw';
+        var cx = '017525967829683181080:_lczuqpjctw';
         var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
         gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
             '//www.google.com.ar/cse/cse.js?cx=' + cx;
@@ -557,17 +557,17 @@ $icq = htmlspecialchars($tplparams->get('icq'));
                  width: 700px;
 
                }
-
+               
              </style>
 
-                         <div id="archivo_lateral" style="width:200px; float:left;">
-
-                           <jdoc:include type="modules" name="archivo" style="rounded"/>
-
-                         </div>
-
+                        <div id="archivo_lateral" style="width:200px; float:left;">
+                            <jdoc:include type="modules" name="archivo" style="rounded"/>
+                        </div>
+                        <div class="clr"></div>
+                        <div style="margin-left: 30%;">
+                            <jdoc:include type="modules" name="component_footer" style="rounded"/>
+                        </div>
                         <?php 
-
              }?>
 
                         

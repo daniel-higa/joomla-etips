@@ -35,6 +35,7 @@
 		<position>menu</position>
 		<position>logo</position>
         <position>bottom-menu</position>
+        <position>component_footer</position>
 	</positions>
 
 	<languages folder="language">
