@@ -127,6 +127,7 @@ function ir_a(id){
 </script>
 
 <?php
+
 $lang =& JFactory::getLanguage();
 
 echo '<div style="clear:both;"></div>';
@@ -145,10 +146,9 @@ if (in_array($this->cat_id, array_values($categorias))) {
     foreach ($lista as $items)
     {
         echo "<div onclick='ir_a(\"".$items['cat_id']."\")' id='".$items['cat_id']."_' class='titulo_region' style='width:33%; float:left; margin-bottom:10px; '>".$items['cat_name']."</div>";
-
     }
     echo "<br><br>";
-
+    
     foreach ($lista as $items)
     {
         echo "<div id='".$items['cat_id']."__' class='titulo_region' style='width:100%; float:left; margin-bottom: 20px;'>".$items['cat_name']."</div><br><br>";
@@ -158,7 +158,9 @@ if (in_array($this->cat_id, array_values($categorias))) {
         $query2 .= 'WHERE cat_published=1 && cat_approved=1 && cat_parent= ' . $db2->quote($items['cat_id']) . ' ORDER BY cat_name';
         $db2->setQuery($query2);
         $lista2 = $db2->loadAssocList();
-
+        
+        
+        
         //var_dump($lista2);
         foreach ($lista2 as $items2) {
             echo '<div class="listing-summary fieldRow"><div class="header-mtree"><h3>';
@@ -172,6 +174,8 @@ if (in_array($this->cat_id, array_values($categorias))) {
             $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($short_description), '');
             echo '<a href="'. $app_link .' " target="_blank">'. $app_ico  .'</a></div></div>';
         }
+        
+        include('page_subCatIndex.old.php');
     }
 } else {
     if( $this->cat_show_listings ) {
