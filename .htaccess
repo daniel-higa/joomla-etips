@@ -23,14 +23,18 @@ Options +FollowSymLinks
 
 RewriteEngine On
 
+# redirect etipsmobile.com
+RewriteCond %{HTTP_HOST} ^www.etipsmobile.com$
+RewriteRule ^(.*)$ http://www.etips.com/$1 [R=301,L] 
+
 # ingles
-RewriteRule en/component/mtree/(.*)/(.*) http://www.etips.com/en/more-destinations/$2 [R=301,L]
+#RewriteRule (.*)en/component/mtree/(.*)/(.*) $1/en/more-destinations/$3 [R=301,L]
 
 # castellano
-RewriteRule es/component/mtree/(.*)/(.*) http://www.etips.com/es/mas-destinos/$2 [R=301,L]
+#RewriteRule es/component/mtree/(.*)/(.*) http://www.etips.com/es/mas-destinos/$2 [R=301,L]
 
 # frances
-RewriteRule fra/component/mtree/(.*)/(.*) http://www.etips.com/fra/autres-destinations/$2 [R=301,L]
+RewriteRule (.*)fra/component/mtree/(.*)/(.*) $1/fra/autres-destinations/$3 [R=301,L]
 
 # koreano
 RewriteRule kr/component/mtree/(.*)/(.*) http://www.etips.com/kr/more-destinations/$2 [R=301,L]
@@ -105,4 +109,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+# PHP
+#php_flag display_errors off
 
