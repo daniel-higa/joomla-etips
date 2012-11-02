@@ -28,34 +28,45 @@ RewriteCond %{HTTP_HOST} ^www.etipsmobile.com$
 RewriteRule ^(.*)$ http://www.etips.com/$1 [R=301,L] 
 
 # ingles
-#RewriteRule (.*)en/component/mtree/(.*)/(.*) $1/en/more-destinations/$3 [R=301,L]
+RewriteRule (.*)en/component/mtree/(.*)/(.*) $1/en/more-destinations/$3 [R=301,L]
+RewriteRule (.*)en/more-destinations/(.*)/(.*)/(.*) $1/en/more-destinations/$4 [R=301,L]
 
 # castellano
-#RewriteRule es/component/mtree/(.*)/(.*) http://www.etips.com/es/mas-destinos/$2 [R=301,L]
+RewriteRule es/component/mtree/(.*)/(.*) http://www.etips.com/es/mas-destinos/$2 [R=301,L]
+RewriteRule (.*)es/mas-destinos/(.*)/(.*)/(.*) $1/es/mas-destinos/$4 [R=301,L]
 
 # frances
 RewriteRule (.*)fra/component/mtree/(.*)/(.*) $1/fra/autres-destinations/$3 [R=301,L]
+RewriteRule (.*)fra/autres-destinations/(.*)/(.*)/(.*) $1/fra/autres-destinations/$4 [R=301,L]
 
 # koreano
-RewriteRule kr/component/mtree/(.*)/(.*) http://www.etips.com/kr/more-destinations/$2 [R=301,L]
+RewriteRule (.*)kr/component/mtree/(.*)/(.*) $1/kr/more-destinations/$3 [R=301,L]
+RewriteRule (.*)kr/more-destinations/(.*)/(.*)/(.*) $1/kr/more-destinations/$4 [R=301,L]
 
 # chino
-RewriteRule zh/component/mtree/(.*)/(.*) http://www.etips.com/zh/more-destinations/$2 [R=301,L]
+RewriteRule (.*)zh/component/mtree/(.*)/(.*) $1/zh/more-destinations/$3 [R=301,L]
+RewriteRule (.*)zh/more-destinations/(.*)/(.*)/(.*) $1/zh/more-destinations/$4 [R=301,L]
 
 # ruso
-RewriteRule ru/component/mtree/(.*)/(.*) http://www.etips.com/ru/more-destinations/$2 [R=301,L]
+RewriteRule (.*)ru/component/mtree/(.*)/(.*) $1/ru/more-destinations/$3 [R=301,L]
+RewriteRule (.*)ru/more-destinations/(.*)/(.*)/(.*) $1/ru/more-destinations/$4 [R=301,L]
 
 # aleman
-RewriteRule de/component/mtree/(.*)/(.*) http://www.etips.com/de/mehr-zielorte/$2 [R=301,L]
+RewriteRule (.*)de/component/mtree/(.*)/(.*) $1/de/mehr-zielorte/$3 [R=301,L]
+RewriteRule (.*)de/mehr-zielorte/(.*)/(.*)/(.*) $1/de/mehr-zielorte/$4 [R=301,L]
 
 # italiano
-RewriteRule it/component/mtree/(.*)/(.*) http://www.etips.com/it/altre-destinazione/$2 [R=301,L]
+RewriteRule (.*)it/component/mtree/(.*)/(.*) $1/it/altre-destinazione/$3 [R=301,L]
+RewriteRule (.*)it/altre-destinazione/(.*)/(.*)/(.*) $1/it/altre-destinazione/$4 [R=301,L]
 
 # portuges
-RewriteRule pt/component/mtree/(.*)/(.*) http://www.etips.com/pt/mais-destinos/$2 [R=301,L]
+RewriteRule (.*)pt/component/mtree/(.*)/(.*) $1/pt/mais-destinos/$3 [R=301,L]
+RewriteRule (.*)pt/mais-destinos/(.*)/(.*)/(.*) $1/pt/mais-destinos/$4 [R=301,L]
 
 # japones
-RewriteRule jp/component/mtree/(.*)/(.*) http://www.etips.com/jp/more-destinations/$2 [R=301,L]
+RewriteRule (.*)jp/component/mtree/(.*)/(.*) $1/jp/more-destinations/$3 [R=301,L]
+RewriteRule (.*)jp/more-destinations/(.*)/(.*)/(.*) $1/jp/more-destinations/$4 [R=301,L]
+
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below
