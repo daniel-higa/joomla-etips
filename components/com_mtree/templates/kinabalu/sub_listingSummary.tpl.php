@@ -15,7 +15,7 @@
             $app_link = '<img src="images/appstore_btn_en.png" alt="' . $link_name->getOutput(2) . '">';
         }
         
-        echo '<a href="' . $link . '" target="_blank">';
+        echo '<a href="' . $link . '" target="_blank" onclick="_gaq.push([\'_trackEvent\', \'Destinos\', \''. htmlspecialchars($this->cat_name) .'\'])">';
         echo '<div class="app_head_container">';
         echo '<div class="title_container"><h2 class="app_title">' . $link_name->getOutput(2) . '</h2></div><div class="ico_container">' . $app_link  . '</div></div>';
         echo '<div class="clear"></div>';
