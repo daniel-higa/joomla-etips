@@ -143,6 +143,7 @@ margin-right: 5px;
 	padding-right:6px;
 	width:630px;
 	float:left;
+    position: relative;
 }
 
 #search {
@@ -1320,4 +1321,13 @@ div.selectbox-wrapper ul li {
 #bottom_manu .module_menu .menu li, .module .menu li {
     padding: 0;
     font-size: 12px;
+}
+
+
+.top_links {
+    height:40px;
+    width:250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

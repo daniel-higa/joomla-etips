@@ -148,7 +148,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
 
 
-  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css?v2" type="text/css" />
 
 
 
@@ -307,20 +307,13 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
   <div class="wrapper">
 
-
-
     <div class="logo">
-
-
-
-      <a href="/"><jdoc:include type="modules" name="logo" /></a>
-
-
-
+        <a href="/"><jdoc:include type="modules" name="logo" /></a>
+        <div class="top_links">
+            <jdoc:include type="modules" name="top_links" />
+        </div>
     </div>
-
     
-
         <style>
 
     .noover {
