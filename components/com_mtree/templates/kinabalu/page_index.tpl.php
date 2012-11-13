@@ -117,7 +117,7 @@ if (is_array($this->categories)): ?>
 			$j = 0;
 			echo '<div class="subcat">';
 			
-			foreach ($this->sub_cats[$cat->cat_id] AS $sub_cat): 
+			/*foreach ($this->sub_cats[$cat->cat_id] AS $sub_cat): 
 				$this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$sub_cat->cat_id&Itemid=$this->Itemid", htmlspecialchars($sub_cat->cat_name)); 
 				$j++;
 				if ($this->sub_cats_total[$cat->cat_id] > $j) {
@@ -130,7 +130,7 @@ if (is_array($this->categories)): ?>
 				} elseif($this->sub_cats_total[$cat->cat_id] == $j) {
 					// No more sub-categories
 				} 
-			endforeach; 
+			endforeach; */
 			echo '</div>';
 		}
 		if(isset($this->cat_links) && !empty($this->cat_links[$cat->cat_id])) {
