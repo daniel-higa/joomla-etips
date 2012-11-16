@@ -1,0 +1,46 @@
+/* General */
+
+
+
+a:active, a:focus { outline:0; }
+
+.gkHighlighterGK4 { overflow:hidden; position:relative; height:26px; line-height:26px; width: 981px; float:left; background-color:#F6F6F6; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -khtml-border-radius: 5px;
+border:1px solid #DEDEDE; }
+
+/* Interface */
+
+
+
+.gkHighlighterInterface { float:left; width:auto; height:21px; margin:0 21px 0 0; padding: 0 7px;  }
+
+.gkHighlighterInterface span.text { display:block; float:left; margin:3px 18px 0 5px; /*text-transform: uppercase; */
+font:12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+
+.gkHighlighterInterface div { float:left; width:auto; margin-top:3px;}
+
+.gkHighlighterInterface div a { display:block; float:left; height:13px; width:13px; margin: 4px 0 0 2px; background:transparent url('../images/interface.png') no-repeat 0 0; cursor:pointer; }
+
+.gkHighlighterInterface div a.prev { margin-top:3px;}
+
+.gkHighlighterInterface div a.next { background-position: right 0; margin-top:3px;}
+
+.gkHighlighterInterface div a.prev:hover { background-position: 0 bottom; }
+
+.gkHighlighterInterface div a.next:hover { background-position: right bottom; }
+
+/* Items */
+
+
+
+.gkHighlighterWrapper { width: 800px; float:left; height:21px; position: absolute; overflow: hidden; margin-left:160px; margin-top:-2px; }
+
+.gkHighlighterWrapper .nowrap { width: 100000px; position: absolute; left: -99999em; }
+
+.gkHighlighterWrapper .gkHighlighterItem { position: absolute; top:0; width:100%; left:0; padding-left:7px; }
+
+.gkHighlighterItem a:link {
+	color:#6E6E6E;
+	font:12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;}
+	
+.gkHighlighterItem a:hover {
+	color:#828282;}
