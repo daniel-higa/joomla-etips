@@ -137,9 +137,9 @@ class NH_GK4_Helper {
     			if( $this->config['news_as_links'] ) $news_content .= '<a href="'.$news_link.'" target="_blank">'; 
     			if( $this->config['show_title'] ) {   $news_content .= '<span>' . $news_title . '</span>';  
                                                      }
-                 if( $this->config['show_desc']) {   $news_content .= ': ';                              
+                 if( $this->config['show_desc']) {   $news_content .= ': <br/>';
                                                      $news_content .= $news_text; }
-                if( $this->config['news_as_links'] ) $news_content .= '</a>';
+                if( $this->config['news_as_links'] ) $news_content .= '...</a>';
                                                      $news_content .= '</span>';   
     			// creating table with news content
     			array_push($nh_content, $news_content);

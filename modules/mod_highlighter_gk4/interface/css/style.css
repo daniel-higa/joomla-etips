@@ -4,7 +4,7 @@
 
 a:active, a:focus { outline:0; }
 
-.gkHighlighterGK4 { overflow:hidden; position:relative; height:26px; line-height:26px; width: 981px; float:left; background-color:#F6F6F6; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -khtml-border-radius: 5px;
+.gkHighlighterGK4 { overflow:hidden; position:relative; height:6em; line-height:26px; width: 981px; float:left; background-color:#F6F6F6; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -khtml-border-radius: 5px;
 border:1px solid #DEDEDE; }
 
 /* Interface */
@@ -32,7 +32,7 @@ font:12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,san
 
 
 
-.gkHighlighterWrapper { width: 800px; float:left; height:21px; position: absolute; overflow: hidden; margin-left:160px; margin-top:-2px; }
+.gkHighlighterWrapper { width: 800px; float:left; height:6em; position: absolute; overflow: hidden; margin-left:160px; margin-top:-2px; }
 
 .gkHighlighterWrapper .nowrap { width: 100000px; position: absolute; left: -99999em; }
 
