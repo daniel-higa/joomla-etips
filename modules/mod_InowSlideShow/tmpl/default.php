@@ -1450,7 +1450,7 @@ $javascript.
 
 
 <?php 
-$credit= 'INow';
+$credit= '<div style="visibility:hidden;">INow</div>';
 echo $credit;
 ?>
 
