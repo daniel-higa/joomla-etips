@@ -95,7 +95,17 @@ if (!is_array($categorias) or !in_array($this->cat_id, array_values($categorias)
    $sub_class = 'head_sub_cat';
 }
 
-?> 
+?>
+
+<?php
+$document->addCustomTag('<meta property="og:image" content="'. JURI::base() . 'images/etips_200.jpg"/>');
+//$document->addCustomTag('<meta property="og:type" content="article"/>');
+//$document->addCustomTag('<meta property="og:title" content="' . $document->getTitle() . '" />');
+//$document->addCustomTag('<meta property="og:url" content="'. JURI::current() .'" />');
+//$document->addCustomTag('<meta property="og:site_name" content="http://etips.danielhiga.org.ar" />');
+//$document->addCustomTag('<meta property="og:description" content="' . 'test 123 test 123' . '" />');
+//$document->addCustomTag('<meta property="fb:admins" content="" />');
+?>
 
 <div id="cat-header">
 <h1 class="contentheading <?php echo $sub_class;?>"><?php echo htmlspecialchars($this->cat_name) ?><?php echo ($this->mtconf['show_category_rss']) ? $this->plugin('showrssfeed','new') : ''; ?></h1>
