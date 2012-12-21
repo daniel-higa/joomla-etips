@@ -88,7 +88,7 @@
 																				?>
                                                                                         
                                                                                         <a target="_blank" 
-																							onclick="_gaq.push(['_trackEvent', 'Destinos', '<?php echo $items3['link_name']."/IPhone"?>'])"
+																							onclick="_gaq.push(['_trackEvent', 'Destinos-<?php echo $lang->getTag(); ?>', '<?php echo $items3['link_name']."/IPhone"?>'])"
                                                                                         	href="<?php echo $lista_iphone['0']['value']?>">
                                                                                             	<img src="/images/apple-logo.png" style="vertical-align: middle"> iPhone</a>                                                                                           
                                                                                  <?php }?>
@@ -108,7 +108,7 @@
 																				{
 																				?>
                                                                                         <a target="_blank"
-																							onclick="_gaq.push(['_trackEvent', 'Destinos', '<?php echo $items3['link_name']."/IPad"?>'])"
+																							onclick="_gaq.push(['_trackEvent', 'Destinos-<?php echo $lang->getTag(); ?>', '<?php echo $items3['link_name']."/IPad"?>'])"
 																							href="<?php echo $lista_ipad['0']['value']?>"><img src="/images/apple-logo.png" style="vertical-align: middle"> iPad </a>
                                                                                                      
                                                                                  <?php }?>

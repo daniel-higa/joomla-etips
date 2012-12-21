@@ -4860,13 +4860,14 @@ function tuFuncion($link, $str){
 
 function agregarOnClick($link, $contenido, $plataforma){
 	$doc =& JFactory::getDocument();
-	return agregarOnClickGeneral($link, $contenido, $doc->getTitle(), $plataforma);
+    $lang =& JFactory::getLanguage();;
+	return agregarOnClickGeneral($link, $contenido, $doc->getTitle(), $plataforma, $lang->getTag());
 }
 
-function agregarOnClickGeneral($link, $contenido, $nombreEvento, $plataforma){
+function agregarOnClickGeneral($link, $contenido, $nombreEvento, $plataforma, $langTag){
 	if( ! empty( $link ) ){
 		return ereg_replace(">([^>]+)</a>", 
-			'onclick=\'_gaq.push(["_trackEvent", "Destinos", "'.$nombreEvento.'/'.$plataforma.'"])\' >'.
+			'onclick=\'_gaq.push(["_trackEvent", "Destinos-'.  $langTag .'" , "'.$nombreEvento.'/'.$plataforma.'"])\' >'.
 			$contenido."</a>", $link);
 	}
 	else

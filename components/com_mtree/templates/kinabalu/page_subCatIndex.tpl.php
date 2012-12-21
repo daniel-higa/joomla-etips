@@ -182,7 +182,7 @@ if (in_array($this->cat_id, array_values($categorias))) {
             $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($items2['cat_name']), '');
             echo '</h3></div><div class="fields">';
             $this->plugin('ahref', "index.php?option=$this->option&task=listcats&cat_id=$cat_id&Itemid=$this->Itemid", htmlspecialchars($short_description), '');
-            echo '<a href="'. $app_link .' " target="_blank" onclick="_gaq.push([\'_trackEvent\', \'Destinos\',\''. $items2['cat_name'] .'\'])">'. $app_ico  .'</a></div></div>';
+            echo '<a href="'. $app_link .' " target="_blank" onclick="_gaq.push([\'_trackEvent\', \'Destinos-'. $lang->getTag() .'\',\''. $items2['cat_name'] .'\'])">'. $app_ico  .'</a></div></div>';
         }
         
         include('page_subCatIndex.old.php');

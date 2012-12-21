@@ -20,7 +20,6 @@ while( $this->fields->hasNext() ) {
 	$this->fields->next();
 }
 */
-	
 ?> 
 
 <div id="listing"> 
@@ -31,6 +30,7 @@ $this->plugin( 'ahreflisting', $this->link, $link_name->getOutput(1), '', array(
 ?></h2>
 
 <?php
+
 if ( !empty($this->mambotAfterDisplayTitle) ) { 
 	echo trim( implode( "\n", $this->mambotAfterDisplayTitle ) );
 }
@@ -42,7 +42,6 @@ echo '<div class="column first">';
 
 
 if (!empty($this->images)) include $this->loadTemplate( 'sub_images.tpl.php' );
-
 
 echo '<div class="listing-desc">';
 if ($this->config->getTemParam('skipFirstImage','0') == 1) {
@@ -170,13 +169,12 @@ while( $this->fields->hasNext() ) {
 												}
 					if($field_count == '2')
 					{						
-                        echo agregarOnClick($link, "<img style=\"vertical-align: middle\" src=\"/images/apple-logo.png\" /> iPad ", "iPad");						
+                        echo agregarOnClick($link, "<img style=\"vertical-align: middle\" src=\"/images/apple-logo.png\" /> iPad ", "iPad");
 						}
 					if($field_count == '3')
 					{
 					    echo tuFuncion($link, "<img style=\"vertical-align: middle\" src=\"/images/Blackberry_logo.png\" /> BlackBerry");						
 						}
-				
 				
 				
 			/*	echo $address_field->getDisplayPrefixText(); 
@@ -221,12 +219,13 @@ while( $this->fields->hasNext() ) {
 												}
 					if($field->id == '33')
 					{						
-                        echo agregarOnClick($link, "<img style=\"vertical-align: middle\" src=\"/images/apple-logo.png\" /> iPad", "iPad");						
+                        echo agregarOnClick($link, "<img style=\"vertical-align: middle\" src=\"/images/apple-logo.png\" /> iPad", "iPad");
 						}
 					if($field->id == '34')
 					{
-					    echo tuFuncion($link, "<img style=\"vertical-align: middle\" src=\"/images/Blackberry_logo.png\" /> BlackBerry");						
+					    echo tuFuncion($link, "<img style=\"vertical-align: middle\" src=\"/images/Blackberry_logo.png\" /> BlackBerry");
 						}
+                        echo $lang->getTag;
 					/*  Custom field END */
 			}
 			echo '</div>';
