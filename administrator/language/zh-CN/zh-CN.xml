@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: zh-CN.xml 216 2011-03-08 07:03:43Z  $ -->
+<metafile version="1.7" client="administrator">
+	<name>简体中文</name>
+	<version>1.7.0</version>
+	<creationDate>2011-07-17</creationDate>
+	<author>CHN Translation Team</author>
+	<authorEmail>zhous1998@sohu.com</authorEmail>
+	<authorUrl>www.joomla.cn</authorUrl>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Chinese language for Joomla 1.6 back-end. 基地：囧啦!中国（joomla.cn）</description>
+
+	<metadata>
+		<name>简体中文</name>
+		<tag>zh-CN</tag>
+		<rtl>0</rtl>
+		<locale>zh_CN.utf8, zh_CN.UTF-8, zh_CN, chn_CN, cn, chinese</locale>
+		<firstDay>0</firstDay>
+	</metadata>
+</metafile>
