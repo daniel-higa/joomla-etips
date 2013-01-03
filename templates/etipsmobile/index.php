@@ -618,9 +618,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
                 </div>
 
-                
-
-                <div id="social_buttons" style="    float: left;    margin-left: 225px;    margin-top: 18px;    text-align: center;    width: 600px;">
+                <div id="social_buttons" style="float:left; margin-left: 200px; margin-right:auto; margin-top: 18px; text-align: center; width: auto;">
                     <!--<a href="https://www.facebook.com/pages/ETIPS-MOBILE/111500398950144" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/facebook.png" style="float:left; margin-top:5px; margin-right:20px;"/></a>-->
                     <!--<a href="https://twitter.com/#!/ETipsMobile" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/twitter_.jpg" style="float:left; margin-top:6px; margin-right:20px;"/></a>-->
                     <jdoc:include type="modules" name="social" style="rounded"/>
