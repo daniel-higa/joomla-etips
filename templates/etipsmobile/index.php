@@ -248,35 +248,6 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
   <?php endif; ?>
 
-  <!-- google analytics START -->
-
-  <script type="text/javascript">
-
-
-
-  var _gaq = _gaq || [];
-
-  _gaq.push(['_setAccount', 'UA-11624374-1']);
-
-  _gaq.push(['_trackPageview']);
-
-
-
-  (function() {
-
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-
-  })();
-
-
-
-</script>
-
-
   <!-- google analytics END -->
   <!-- Put the following javascript before the closing </head> tag. -->
     <script>
@@ -288,6 +259,18 @@ $icq = htmlspecialchars($tplparams->get('icq'));
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
       })();
     </script>
+
+  <!-- google analytics START -->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37203429-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
 
 </head>
 
@@ -637,20 +620,10 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
                 
 
-                <div id="social_buttons" style="    float: left;    margin-left: 290px;    margin-top: 18px;    text-align: center;    width: 524px;">
-
-                 <a href="https://www.facebook.com/pages/ETIPS-MOBILE/111500398950144" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/facebook.png" style="float:left; margin-top:5px; margin-right:20px;"/></a>
-                 
-                 <a href="https://twitter.com/#!/ETipsMobile" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/twitter_.jpg" style="float:left; margin-top:6px; margin-right:20px;"/></a>
-                 
-                 
-
-                 <jdoc:include type="modules" name="social" style="rounded"/>
-
-                  
-
-                  
-
+                <div id="social_buttons" style="    float: left;    margin-left: 225px;    margin-top: 18px;    text-align: center;    width: 600px;">
+                    <!--<a href="https://www.facebook.com/pages/ETIPS-MOBILE/111500398950144" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/facebook.png" style="float:left; margin-top:5px; margin-right:20px;"/></a>-->
+                    <!--<a href="https://twitter.com/#!/ETipsMobile" title="Facebook" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/twitter_.jpg" style="float:left; margin-top:6px; margin-right:20px;"/></a>-->
+                    <jdoc:include type="modules" name="social" style="rounded"/>
                     <a href="http://www.youtube.com/watch?v=y6A1VQDOxSE&feature=player_embedded" title="Youtube" target="_blank"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/youtube.jpg" style="float:left"/></a>
                 </div>
                 <jdoc:include type="modules" name="bottom-menu" style="rounded"/>
