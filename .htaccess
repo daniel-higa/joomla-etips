@@ -28,9 +28,9 @@ RewriteCond %{HTTP_HOST} ^www.etipsmobile.com$
 RewriteRule ^(.*)$ http://www.etips.com/$1 [R=301,L] 
 
 #for test
-#RewriteBase /dani_higa/tips/
-#production
 RewriteBase /
+#production
+#RewriteBase /
 
 # frances
 RewriteRule fra/component/mtree/(.*)/(.*) fra/autres-destinations/$2 [R=301,L]
