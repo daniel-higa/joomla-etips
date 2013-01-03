@@ -55,3 +55,8 @@ if( $this->task == "search" && empty($this->links) ) {
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-like" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
 </div>
+<div style="float:left; margin-left:20px;">
+<script>
+document.write('<a href="http://www.facebook.com/sharer.php?u=' + document.location + '" target="_blank"><img src="images/facebook_counter.png"/></a>');
+</script>
+</div>
