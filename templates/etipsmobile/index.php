@@ -263,7 +263,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
   <!-- google analytics START -->
   <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37203429-1']);
+  _gaq.push(['_setAccount', 'UA-11624374-1']);
   _gaq.push(['_trackPageview']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
