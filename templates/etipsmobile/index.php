@@ -132,6 +132,7 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
 
 
+
   <link  href="//fonts.googleapis.com/css?family=Calligraffitti:regular" rel="stylesheet" type="text/css" >
 
 
@@ -183,8 +184,8 @@ $icq = htmlspecialchars($tplparams->get('icq'));
 
 
   <?php
-
-
+  $document =& JFactory::getDocument();
+  $document->addCustomTag('<meta property="og:image" content="'. JURI::base() . 'images/etips_200.jpg"/>');
 
   $twitter_name = htmlspecialchars($tplparams->get('twitter_name'));
 
