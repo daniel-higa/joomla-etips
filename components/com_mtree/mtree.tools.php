@@ -628,13 +628,17 @@ function parse_words($text, $minlength=1){
 }
 
 function set_alt($html, $alt) {
-	$list_dom = new DOMDocument();
-	$list_dom->loadHTML($html);
-	$imgs = $list_dom->getElementsByTagName('img');
-	foreach ($imgs as $img) {
-		$img->setAttribute('alt', $alt);
+	if (!empty ($html)) {
+		$list_dom = new DOMDocument();
+		$list_dom->loadHTML($html);
+		$imgs = $list_dom->getElementsByTagName('img');
+		foreach ($imgs as $img) {
+			$img->setAttribute('alt', $alt);
+		}
+		return $list_dom->saveHTML();
+	} else {
+		return '';
 	}
-	return $list_dom->saveHTML();
 }
 
 function listing_alt($city, $name, $lang) {
