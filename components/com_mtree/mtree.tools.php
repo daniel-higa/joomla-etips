@@ -626,4 +626,29 @@ function parse_words($text, $minlength=1){
 		return($result);		
 	}
 }
+
+function set_alt($html, $alt) {
+	$list_dom = new DOMDocument();
+	$list_dom->loadHTML($html);
+	$imgs = $list_dom->getElementsByTagName('img');
+	foreach ($imgs as $img) {
+		$img->setAttribute('alt', $alt);
+	}
+	return $list_dom->saveHTML();
+}
+
+function listing_alt($city, $name, $lang) {
+	$change = array();
+	$change[621] = array(
+	    'オフライン' => 'iPhone、iPad、iPodのための {city} マップ',
+	    'ガイド' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
+	);
+	$text = '';
+	foreach ($change[$lang] as $key => $value) {
+		if (strpos($name, $key) !== false) {
+			$text = str_replace('{city}', $city, $value);
+		}
+    }
+	return $text;
+}
 ?>
