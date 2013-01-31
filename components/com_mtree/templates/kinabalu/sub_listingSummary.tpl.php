@@ -30,8 +30,13 @@
 
         $column_description = $fields->getFieldByCaption('column_description');
 
-        if (isset($column_description) and in_array($categoria, array(621))) {
-            echo set_alt($column_description->getValue(), listing_alt($this->cat_name, $link_name->getOutput(2), $categoria));
+        if (isset($column_description)) {
+			$alt = listing_alt($this->cat_name, $link_name->getOutput(2), $categoria);
+			if (!empty($alt)) {
+				echo set_alt($column_description->getValue(), $alt);
+			} else {
+				echo $column_description->getValue();
+			}
         }
         echo '</div>';
 

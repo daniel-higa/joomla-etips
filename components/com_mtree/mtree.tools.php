@@ -648,11 +648,13 @@ function listing_alt($city, $name, $lang) {
 	    'ガイド' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
 	);
 	$text = '';
-	foreach ($change[$lang] as $key => $value) {
-		if (strpos($name, $key) !== false) {
-			$text = str_replace('{city}', $city, $value);
+	if (array_key_exists($lang, $change)) {
+		foreach ($change[$lang] as $key => $value) {
+			if (strpos($name, $key) !== false) {
+				$text = str_replace('{city}', $city, $value);
+			}
 		}
-    }
+	}
 	return $text;
 }
 ?>
