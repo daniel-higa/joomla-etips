@@ -647,6 +647,14 @@ function listing_alt($city, $name, $lang) {
 	    'オフライン' => 'iPhone、iPad、iPodのための {city} マップ',
 	    'ガイド' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
 	);
+	$change[408] = array(
+	    'Guida' => 'Guida e mappa di {city} per  iPhone, iPad e iPod Touch',
+	    'Offline' => 'Mappa di {city} per  iPhone, iPad e iPod Touch',
+	);
+	$change[192] = array(
+	    'Guide' => 'Guide et carte {city} pour iPhone, iPad et iPod Touch',
+	    'Offline' => 'Carte {city} pour iPhone, iPad et iPod Touch',
+	);
 	$text = '';
 	if (array_key_exists($lang, $change)) {
 		foreach ($change[$lang] as $key => $value) {
