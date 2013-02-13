@@ -655,6 +655,13 @@ function listing_alt($city, $name, $lang) {
 	    'Guide' => 'Guide et carte {city} pour iPhone, iPad et iPod Touch',
 	    'Offline' => 'Carte {city} pour iPhone, iPad et iPod Touch',
 	);
+
+	$change[461] = array(
+	    'Viagem' => '{city} Guia & Mapa para iPhone, iPad & iPod Touch',
+	    'Offline' => '{city} Mapa para iPhone, iPad & iPod Touch',
+	);
+
+	
 	$text = '';
 	if (array_key_exists($lang, $change)) {
 		foreach ($change[$lang] as $key => $value) {
