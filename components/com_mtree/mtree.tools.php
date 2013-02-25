@@ -662,8 +662,8 @@ function listing_alt($city, $name, $lang) {
 	);
 
 	$change[355] = array(
-	    'Reiseführer' => '{city} Guia & Mapa para iPhone, iPad & iPod Touch',
-	    'Off-Line' => '{city} Mapa para iPhone, iPad & iPod Touch',
+	    'Reiseführer' => '{city} Reiseführer & Karten für iPhone, iPad & iPod Touch',
+	    'Off-Line' => '{city} Karten für iPhone, iPad & iPod Touch',
 	);
 	
 	$text = '';
