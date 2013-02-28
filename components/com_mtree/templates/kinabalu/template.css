@@ -104,7 +104,10 @@ float:left;
 }
 
 #cat-desc {
-margin:5px 0 10px;
+    margin:5px 0 10px;
+    color: #000000;
+    font-family: lucida grande, geneva;
+    font-size: 10pt;
 }
 
 #cat-desc p {
@@ -1145,8 +1148,9 @@ margin-left:3px;
 }
 
 .app_description h3 p {
-    color: #777777;
-    font-size: 12px;
+    color: #000000;
+    font-family: lucida grande, geneva;
+    font-size: 10pt;
 }
 
 .head_sub_cat {
