@@ -666,6 +666,17 @@ function listing_alt($city, $name, $lang) {
 	    'Off-Line' => '{city} Karten für iPhone, iPad & iPod Touch',
 	);
 	
+	$change[194] = array(
+	    '旅' => 'iPhone、iPad和iPod Touch{city}旅游指南与地图',
+	    '地图' => 'iPhone、iPad和iPod Touch{city}地图',
+	);
+
+	$change[568] = array(
+	    '여행가' => '아이폰, 아이패드, 아이팟 터치 용 {city} 가이드와 지도',
+	    '지도' => '아이폰, 아이패드, 아이팟 터치 용 {city} 지도',
+	);
+
+	
 	$text = '';
 	if (array_key_exists($lang, $change)) {
 		foreach ($change[$lang] as $key => $value) {
