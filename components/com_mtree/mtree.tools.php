@@ -630,7 +630,7 @@ function parse_words($text, $minlength=1){
 function set_alt($html, $alt) {
 	if (!empty ($html)) {
 		$list_dom = new DOMDocument();
-		$list_dom->loadHTML($html);
+		$list_dom->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', "UTF-8"));
 		$imgs = $list_dom->getElementsByTagName('img');
 		foreach ($imgs as $img) {
 			$img->setAttribute('alt', $alt);
@@ -641,8 +641,35 @@ function set_alt($html, $alt) {
 	}
 }
 
+function cat_alt($city, $lang) {
+	$change = array(
+		568 => '아이폰, 아이패드, 아이팟 터치 용 {city} 가이드와 지도',
+		194 => 'iPhone、iPad和iPod Touch{city}旅游指南与地图',
+		85 => '{city} Guide & Map for iPhone, iPad & iPod Touch',
+		86 => 'Guía y Mapa de {city} para iPhone, iPad & iPod Touch',
+		621 => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
+		408 => 'Guida e mappa di {city} per iPhone, iPad e iPod Touch',
+		192 => 'Guide et carte {city} pour iPhone, iPad et iPod Touch',
+		355 => '{city} Reiseführer & Karten für iPhone, iPad & iPod Touch',
+		461 => '{city} Guia & Mapa para iPhone, iPad & iPod Touch',
+		299 => '{city} Путеводитель и карта для iPhone, iPad и iPod Touch'
+	);
+	$text = '';
+	if (array_key_exists($lang, $change)) {
+		$text = str_replace('{city}', $city, $change[$lang]);
+	}
+	return $text;
+	
+}
+
 function listing_alt($city, $name, $lang) {
 	$change = array();
+	
+	$change[299] = array(
+	    'Offline' => 'iPhone、iPad、iPodのための {city} マップ',
+	    'Туристический' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
+	);
+		
 	$change[621] = array(
 	    'オフライン' => 'iPhone、iPad、iPodのための {city} マップ',
 	    'ガイド' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
@@ -675,7 +702,16 @@ function listing_alt($city, $name, $lang) {
 	    '여행가' => '아이폰, 아이패드, 아이팟 터치 용 {city} 가이드와 지도',
 	    '지도' => '아이폰, 아이패드, 아이팟 터치 용 {city} 지도',
 	);
+	
+	$change[85] = array(
+	    'guide' => '{city} Guide & Map for iPhone, iPad & iPod Touch',
+	    'offline' => '{city} Maps for iPhone, iPad & iPod Touch',
+	);
 
+	$change[86] = array(
+	    'Guía' => 'Guía y Mapa de {city} para iPhone, iPad & iPod Touch',
+	    'Offline' => 'Mapas de {city} para iPhone, iPad & iPod Touch',
+	);
 	
 	$text = '';
 	if (array_key_exists($lang, $change)) {

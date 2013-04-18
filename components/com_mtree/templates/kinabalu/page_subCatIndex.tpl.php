@@ -117,6 +117,8 @@ if (isset($this->cat_allow_submission) && $this->cat_allow_submission && $this->
 ?></p>
 </div>
 <?php
+$lang =& JFactory::getLanguage();
+$categoria = $categorias[$lang->getName()];
 if ( (isset($this->cat_image) && $this->cat_image <> '') || (isset($this->cat_desc) && $this->cat_desc <> '') ) {
 	echo '<div id="cat-desc">';
 	if (isset($this->cat_image) && $this->cat_image <> '') {
@@ -124,7 +126,8 @@ if ( (isset($this->cat_image) && $this->cat_image <> '') || (isset($this->cat_de
 		//$this->plugin( 'image', $this->config->getjconf('live_site').$this->config->get('relative_path_to_cat_small_image') . $this->cat_image , $this->cat_name, '', '', '' );
 		echo '</div>';
 	}
-	if ( isset($this->cat_desc) && $this->cat_desc <> '') {	echo $this->cat_desc; }
+	$alt_cat = cat_alt(htmlspecialchars($this->cat_name), $categoria);
+	if ( isset($this->cat_desc) && $this->cat_desc <> '') {	echo set_alt($this->cat_desc, $alt_cat); }
 	echo '</div>';
 }
 ?>
