@@ -666,8 +666,8 @@ function listing_alt($city, $name, $lang) {
 	$change = array();
 	
 	$change[299] = array(
-	    'Offline' => 'iPhone、iPad、iPodのための {city} マップ',
-	    'Туристический' => 'iPhone、iPad、iPodのための {city} ガイド＆マップ',
+	    'Offline' => '{city} карта для iPhone, iPad и iPod Touch',
+	    'Туристический' => '{city} Путеводитель и карта для iPhone, iPad и iPod Touch',
 	);
 		
 	$change[621] = array(
@@ -716,7 +716,7 @@ function listing_alt($city, $name, $lang) {
 	$text = '';
 	if (array_key_exists($lang, $change)) {
 		foreach ($change[$lang] as $key => $value) {
-			if (strpos($name, $key) !== false) {
+			if (strpos(strtolower($name), strtolower($key)) !== false) {
 				$text = str_replace('{city}', $city, $value);
 			}
 		}
