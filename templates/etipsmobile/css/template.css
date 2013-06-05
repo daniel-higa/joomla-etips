@@ -1331,3 +1331,7 @@ div.selectbox-wrapper ul li {
     bottom: 0;
     right: 0;
 }
+
+.center {
+	text-align: center;
+}
