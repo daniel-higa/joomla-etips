@@ -773,29 +773,13 @@ iNow Skitter Slideshow For Joomla!
 
 
 <field type="spacer" name="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Images&lt;/div&gt;" />
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 1&lt;/div&gt;" />
 
-
-
 <field name="img1" type="text" size="60" default="modules/mod_InowSlideShow/images/001.jpg" label="Image1 Path" description="Images1 path URL" />
-
-
-
 <field name="label1" type="text" size="60"   default="" label="Label1" description="" />
-
-
-
 <field name="desc1" type="textarea" rows="7" cols="35"   default="" label="Desc 1" description="You Can Add HTML Here" />
-
-
-
 <field name="link1" type="text" size="60"  default="" label="Image1 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick1" type="text" size="60"  default="" label="onClick1 link" description="ie:alert(1);" />
 <!--End of image one parameter-->
 
 
@@ -809,29 +793,12 @@ iNow Skitter Slideshow For Joomla!
 
 
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 2&lt;/div&gt;" />
-
-
-
 <field name="img2" type="text" size="60"  default="modules/mod_InowSlideShow/images/002.jpg" label="Image2 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label2" type="text" size="60" size="60" default="" label="Image2 Label" description="Images1 Label" />-->
-
-
-
 <field name="label2" type="text" size="60"   default="" label="Label2" description="" />
-
-
-
 <field name="desc2" type="textarea" rows="7" cols="35"   default="" label="Desc 2" description="You Can Add HTML Here" />
-
-
-
 <field name="link2" type="text" size="60" default="" label="Image2 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick2" type="text" size="60"  default="" label="onClick2 link" description="ie:alert(1);" />
 <!--End of image 2 parameter-->
 
 
@@ -849,55 +816,24 @@ iNow Skitter Slideshow For Joomla!
 
 
 <field name="img3" type="text" size="60" default="" label="Image3 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label3" type="text" size="60" size="60" default="" label="Image3 Label" description="Images1 Label" />-->
-
-
-
 <field name="label3" type="text" size="60"  default="" label="Label3" description="" />
-
-
-
 <field name="desc3" type="textarea" rows="7" cols="35"   default="" label="Desc 3" description="You Can Add HTML Here" />
-
-
-
 <field name="link3" type="text" size="60" default="" label="Image3 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick3" type="text" size="60"  default="" label="onClick3 link" description="ie:alert(1);" />
 <!--End of image 3 parameter-->
 
 
 
 <field name="@spacer" type="spacer" default="" label="" description="" />
 
-
-
 <!--Image 4 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 4&lt;/div&gt;" />
-
-
-
 <field name="img4" type="text" size="60" default="" label="Image4 Path" description="Images1 path URL" />
-
-
-
 <field name="label4" type="text" size="60" default="" label="Label4" description="" />
-
-
-
 <field name="desc4" type="textarea" rows="7" cols="35"   default="" label="Desc 4" description="You Can Add HTML Here" />
-
-
-
 <field name="link4" type="text" size="60" default="" label="Image4 link" description="ie:http://www.google.com" />
-
+<field name="onclick4" type="text" size="60"  default="" label="onClick4 link" description="ie:alert(1);" />
 
 
 <!--End of image 4 parameter-->
@@ -906,104 +842,39 @@ iNow Skitter Slideshow For Joomla!
 
 <field name="@spacer" type="spacer" default="" label="" description="" />
 
-
-
 <!--Image 5 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 5&lt;/div&gt;" />
-
-
-
 <field name="img5" type="text" size="60" default="" label="Image5 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label5" type="text" size="60" default="" label="Image5 Label" description="Images1 Label" />-->
-
-
-
 <field name="label5" type="text" size="60"  default="" label="Label5" description="" />
-
-
-
 <field name="desc5" type="textarea" rows="7" cols="35"   default="" label="Desc 5" description="You Can Add HTML Here" />
-
-
-
 <field name="link5" type="text" size="60" default="" label="Image5 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick5" type="text" size="60"  default="" label="onClick5 link" description="ie:alert(1);" />
 <!--End of image 5 parameter-->
-
-
 
 <field name="@spacer" type="spacer" default="" label="" description="" />
 
-
-
 <!--Image 6 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 6&lt;/div&gt;" />
-
-
-
 <field name="img6" type="text" size="60" default="" label="Image6 Path" description="Images1 path URL" />
-
-
-
 <field name="label6" type="text" size="60"  default="" label="Label6" description="" />
-
-
-
 <field name="desc6" type="textarea" rows="7" cols="35"   default="" label="Desc 6" description="You Can Add HTML Here" />
-
-
-
 <field name="link6" type="text" size="60" default="" label="Image6 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick6" type="text" size="60"  default="" label="onClick6 link" description="ie:alert(1);" />
 <!--End of image 6 parameter-->
 
 
 
 <field name="@spacer" type="spacer" default="" label="" description="" />
 
-
-
 <!--Image 7 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 7&lt;/div&gt;" />
-
-
-
 <field name="img7" type="text" size="60" default="" label="Image7 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label7" type="text" size="60" default="" label="Image1 Labe7" description="Images1 Label" />-->
-
-
-
 <field name="label7" type="text" size="60"  default="" label="Label7" description="" />
-
-
-
 <field name="desc7" type="textarea" rows="7" cols="35"   default="" label="Desc 7" description="You Can Add HTML Here" />
-
-
-
 <field name="link7" type="text" size="60" default="" label="Image7 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick7" type="text" size="60"  default="" label="onClick7 link" description="ie:alert(1);" />
 <!--End of image 7 parameter-->
 
 
@@ -1013,33 +884,13 @@ iNow Skitter Slideshow For Joomla!
 
 
 <!--Image 8 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 8&lt;/div&gt;" />
-
-
-
 <field name="img8" type="text" size="60" default="" label="Image8 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label8" type="text" size="60" default="" label="Image8 Label" description="Images1 Label" />-->
-
-
-
 <field name="label8" type="text" size="60"  default="" label="Label8" description="" />
-
-
-
 <field name="desc8" type="textarea" rows="7" cols="35"   default="" label="Desc 8" description="You Can Add HTML Here" />
-
-
-
 <field name="link8" type="text" size="60" default="" label="Image8 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick8" type="text" size="60"  default="" label="onClick8 link" description="ie:alert(1);" />
 <!--End of image 8 parameter-->
 
 
@@ -1054,28 +905,12 @@ iNow Skitter Slideshow For Joomla!
 
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 9&lt;/div&gt;" />
 
-
-
 <field name="img9" type="text" size="60" default="" label="Image9 Path" description="Images1 path URL" />
-
-
-
 <!--<field name="label9" type="text" size="60" default="" label="Image9 Label" description="Images1 Label" />-->
-
-
-
 <field name="label9" type="text" size="60"  default="" label="Label9" description="" />
-
-
-
 <field name="desc9" type="textarea" rows="7" cols="35"   default="" label="Desc 9" description="You Can Add HTML Here" />
-
-
-
 <field name="link9" type="text" size="60" default="" label="Image9 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick9" type="text" size="60"  default="" label="onClick9 link" description="ie:alert(1);" />
 <!--End of image 9 parameter-->
 
 
@@ -1085,307 +920,120 @@ iNow Skitter Slideshow For Joomla!
 
 
 <!--Image 10 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 10&lt;/div&gt;" />
-
-
-
 <field name="img10" type="text" size="60" default="" label="Image10 Path" description="Images1 path URL" />
-
-
-
 <field name="label10" type="text" size="60"  default="" label="Label10" description="" />
-
-
-
 <field name="desc10" type="textarea" rows="7" cols="35"   default="" label="Desc 10" description="You Can Add HTML Here" />
-
-
-
 <field name="link10" type="text" size="60" default="" label="Image10 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick10" type="text" size="60"  default="" label="onClick10 link" description="ie:alert(1);" />
 <!--End of image 10 parameter-->
 
 
 
 <!--Image 11 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 11&lt;/div&gt;" />
-
-
-
 <field name="img11" type="text" size="60" default="" label="Image11 Path" description="Images1 path URL" />
-
-
-
 <field name="label11" type="text" size="60"  default="" label="Label11" description="" />
-
-
-
 <field name="desc11" type="textarea" rows="7" cols="35"   default="" label="Desc 11" description="You Can Add HTML Here" />
-
-
-
 <field name="link11" type="text" size="60" default="" label="Image11 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick11" type="text" size="60"  default="" label="onClick11 link" description="ie:alert(1);" />
 <!--End of image 11 parameter-->
 
 
 
 <!--Image 12 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 12&lt;/div&gt;" />
-
-
-
 <field name="img12" type="text" size="60" default="" label="Image12 Path" description="Images1 path URL" />
-
-
-
 <field name="label12" type="text" size="60"  default="" label="Label12" description="" />
-
-
-
 <field name="desc12" type="textarea" rows="7" cols="35"   default="" label="Desc 12" description="You Can Add HTML Here" />
-
-
-
 <field name="link12" type="text" size="60" default="" label="Image12 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick12" type="text" size="60"  default="" label="onClick12 link" description="ie:alert(1);" />
 <!--End of image 12 parameter-->
 
 
 
 <!--Image 13 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 13&lt;/div&gt;" />
-
-
-
 <field name="img13" type="text" size="60" default="" label="Image13 Path" description="Images1 path URL" />
-
-
-
 <field name="label13" type="text" size="60"  default="" label="Label13" description="" />
-
-
-
 <field name="desc13" type="textarea" rows="7" cols="35"   default="" label="Desc 13" description="You Can Add HTML Here" />
-
-
-
 <field name="link13" type="text" size="60" default="" label="Image13 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick13" type="text" size="60"  default="" label="onClick13 link" description="ie:alert(1);" />
 <!--End of image 13 parameter-->
 
 
 
 <!--Image 14 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 14&lt;/div&gt;" />
-
-
-
 <field name="img14" type="text" size="60" default="" label="Image14 Path" description="Images1 path URL" />
-
-
-
 <field name="label14" type="text" size="60"  default="" label="Label14" description="" />
-
-
-
 <field name="desc14" type="textarea" rows="7" cols="35"   default="" label="Desc 14" description="You Can Add HTML Here" />
-
-
-
 <field name="link14" type="text" size="60" default="" label="Image14 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick14" type="text" size="60"  default="" label="onClick14 link" description="ie:alert(1);" />
 <!--End of image 14 parameter-->
 
-
-
 <!--Image 15 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 15&lt;/div&gt;" />
-
-
-
 <field name="img15" type="text" size="60" default="" label="Image15 Path" description="Images1 path URL" />
-
-
-
 <field name="label15" type="text" size="60"  default="" label="Label15" description="" />
-
-
-
 <field name="desc15" type="textarea" rows="7" cols="35"   default="" label="Desc 15" description="You Can Add HTML Here" />
-
-
-
 <field name="link15" type="text" size="60" default="" label="Image15 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick15" type="text" size="60"  default="" label="onClick15 link" description="ie:alert(1);" />
 <!--End of image 15 parameter-->
 
 
 
 <!--Image 16 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 16&lt;/div&gt;" />
-
-
-
 <field name="img16" type="text" size="60" default="" label="Image16 Path" description="Images1 path URL" />
-
-
-
 <field name="label16" type="text" size="60"  default="" label="Label16" description="" />
-
-
-
 <field name="desc16" type="textarea" rows="7" cols="35"   default="" label="Desc 16" description="You Can Add HTML Here" />
-
-
-
 <field name="link16" type="text" size="60" default="" label="Image16 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick16" type="text" size="60"  default="" label="onClick16 link" description="ie:alert(1);" />
 <!--End of image 16 parameter-->
 
 
 
 <!--Image 17 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 17&lt;/div&gt;" />
-
-
-
 <field name="img17" type="text" size="60" default="" label="Image17 Path" description="Images1 path URL" />
-
-
-
 <field name="label17" type="text" size="60"  default="" label="Label17" description="" />
-
-
-
 <field name="desc17" type="textarea" rows="7" cols="35"   default="" label="Desc 17" description="You Can Add HTML Here" />
-
-
-
 <field name="link17" type="text" size="60" default="" label="Image17 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick17" type="text" size="60"  default="" label="onClick17 link" description="ie:alert(1);" />
 <!--End of image 17 parameter-->
 
 
 
 <!--Image 18 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 18&lt;/div&gt;" />
-
-
-
 <field name="img18" type="text" size="60" default="" label="Image18 Path" description="Images1 path URL" />
-
-
-
 <field name="label18" type="text" size="60"  default="" label="Label18" description="" />
-
-
-
 <field name="desc18" type="textarea" rows="7" cols="35"   default="" label="Desc 18" description="You Can Add HTML Here" />
-
-
-
 <field name="link18" type="text" size="60" default="" label="Image18 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick18" type="text" size="60"  default="" label="onClick18 link" description="ie:alert(1);" />
 <!--End of image 18 parameter-->
 
 
 
 <!--Image 19 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 19&lt;/div&gt;" />
-
-
-
 <field name="img19" type="text" size="60" default="" label="Image19 Path" description="Images1 path URL" />
-
-
-
 <field name="label19" type="text" size="60"  default="" label="Label19" description="" />
-
-
-
 <field name="desc19" type="textarea" rows="7" cols="35"   default="" label="Desc 19" description="You Can Add HTML Here" />
-
-
-
 <field name="link19" type="text" size="60" default="" label="Image19 link" description="ie:http://www.google.com" />
-
-
-
+<field name="onclick19" type="text" size="60"  default="" label="onClick19 link" description="ie:alert(1);" />
 <!--End of image 19 parameter-->
 
 
 
 <!--Image 20 Parameter-->
-
-
-
 <field type="spacer" name="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 20&lt;/div&gt;" />
-
-
-
 <field name="img20" type="text" size="60" default="" label="Image20 Path" description="Images1 path URL" />
-
-
-
 <field name="label20" type="text" size="60"  default="" label="Label20" description="" />
-
-
-
 <field name="desc20" type="textarea" rows="7" cols="35"   default="" label="Desc 20" description="You Can Add HTML Here" />
-
-
-
 <field name="link20" type="text" size="60" default="" label="Image20 link" description="ie:http://www.google.com" />
-
+<field name="onclick20" type="text" size="60"  default="" label="onClick20 link" description="ie:alert(1);" />
 
 
 <!--End of image 20 parameter-->

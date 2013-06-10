@@ -789,6 +789,27 @@ $link19=$params->get( 'link19');
 $link20=$params->get( 'link20');
 
 
+$onclick1=$params->get( 'onclick1');
+$onclick2=$params->get( 'onclick2');
+$onclick3=$params->get( 'onclick3');
+$onclick4=$params->get( 'onclick4');
+$onclick5=$params->get( 'onclick5');
+$onclick6=$params->get( 'onclick6');
+$onclick7=$params->get( 'onclick7');
+$onclick8=$params->get( 'onclick8');
+$onclick9=$params->get( 'onclick9');
+$onclick10=$params->get( 'onclick10');
+$onclick11=$params->get( 'onclick11');
+$onclick12=$params->get( 'onclick12');
+$onclick13=$params->get( 'onclick13');
+$onclick14=$params->get( 'onclick14');
+$onclick15=$params->get( 'onclick15');
+$onclick16=$params->get( 'onclick16');
+$onclick17=$params->get( 'onclick17');
+$onclick18=$params->get( 'onclick18');
+$onclick19=$params->get( 'onclick19');
+$onclick20=$params->get( 'onclick20');
+
 
 $image_style =array("random","cube", "cubeRandom", "block", "cubeStop", "cubeHide", "cubeSize", "horizontal", "showBars", "showBarsRandom", "tube", "fade", "fadeFour", "paralell", "blind", "blindHeight", "blindWidth", "directionTop", "directionBottom", "directionRight", "directionLeft", "cubeStopRandom", "cubeSpread", "cubeJelly", "glassCube", "glassBlock", "circles", "circlesInside", "circlesRotate", "cubeShow", "upBars", "downBars", "hideBars", "swapBars", "swapBarsBack", "swapBlocks", "cut", "randomSmart");
 
@@ -925,6 +946,8 @@ $labels=array($label1,$label2,$label3,$label4,$label5,$label6,$label7,$label8,$l
 $descs=array($desc1,$desc2,$desc3,$desc4,$desc5,$desc6,$desc7,$desc8,$desc9,$desc10,$desc11,$desc12,$desc13,$desc14,$desc15,$desc16,$desc17,$desc18,$desc19,$desc20);
 
 $links=array($link1,$link2,$link3,$link4,$link5,$link6,$link7,$link8,$link9,$link10,$link11,$link12,$link13,$link14,$link15,$link16,$link17,$link18,$link19,$link20);
+$onclick=array($onclick1,$onclick2,$onclick3,$onclick4,$onclick5,$onclick6,$onclick7,$onclick8,$onclick9,$onclick10,$onclick11,$onclick12,$onclick13,$onclick14,$onclick15,$onclick16,$onclick17,$onclick18,$onclick19,$onclick20);
+
 
 $count=0;
 
@@ -1072,14 +1095,10 @@ $numwidth+=15;
 
 }
 
-
+$image[$i] = str_replace('href', 'onclick="'. htmlspecialchars($onclick[$i]) . '" href' , $image[$i]);
+//$image[$i] = '<li><a href="images/' . $img[$i] . '" onclick="' . htmlspecialchars($onclick1) .'"><img src="/images/logo_sin_lineas.png"/></a></li>';
 
 }//end for
-
-
-
-
-
 ?>
 
 
@@ -1340,7 +1359,8 @@ $j2=JUri::root()."modules/mod_InowSlideShow/js/jquery.animate-colors-min.js";
 
 
 
-$j3=JUri::root()."modules/mod_InowSlideShow/js/jquery.skitter.min.js";
+//$j3=JUri::root()."modules/mod_InowSlideShow/js/jquery.skitter.min.js";
+$j3=JUri::root()."modules/mod_InowSlideShow/js/jquery.skitter.js";
 
 
 
